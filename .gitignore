@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+.harness/
+*.zip
+.DS_Store
+Thumbs.db

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Suno Lyrics Exporter Harness</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { max-width: 900px; margin: 40px auto; padding: 0 20px; color: #eee; background: #0e0e11; font: 14px/1.5 system-ui; }
+      h1 { font-size: 22px; } textarea { width: 100%; min-height: 160px; color: #eee; background: #18181d; border: 1px solid #3d3d46; border-radius: 8px; padding: 10px; }
+      button { margin: 12px 8px 18px 0; padding: 9px 14px; border: 0; border-radius: 8px; background: #7c3aed; color: white; cursor: pointer; }
+      pre { max-width: 100%; overflow-wrap: anywhere; white-space: pre-wrap; background: #18181d; border-radius: 8px; padding: 14px; }
+    </style>
+  </head>
+  <body>
+    <h1>Alignment & export harness</h1>
+    <p>This fixture runner exercises the real alignment, timing, completeness, and SRT code without a Suno login.</p>
+    <label>Original lyrics</label><textarea id="lyrics"></textarea>
+    <div><button id="run">Run fixture</button><button id="copy">Copy SRT</button></div>
+    <pre id="result"></pre>
+    <script src="harness.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "suno-lyrics-exporter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A privacy-friendly Chrome and Edge extension for previewing and exporting Suno lyrics.",
+  "scripts": {
+    "dev": "node scripts/build.mjs --watch",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "harness": "node scripts/harness.mjs",
+    "check": "npm run typecheck && npm test && npm run build && node scripts/verify-dist.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.31",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.2",
+    "vitest": "^5.0.2"
+  }
+}
